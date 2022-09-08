@@ -1,0 +1,28 @@
+ 
+
+
+@mixin tipos {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.cuadrado-1{
+    @include tipos
+}
+.cuadrado-2{
+    @include tipos
+}
+.cuadrado-3{
+    @include tipos
+}
+
+
+.extend{
+    border: 5px solid;  
+    @include tipos;
+}
